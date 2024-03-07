@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { AppBar, Box, Divider, Drawer, IconButton, Toolbar, Typography, } from "@mui/material";
 import Logo from "../../images/logo.svg";
 import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+
 
 const Header = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -24,7 +27,7 @@ const Header = () => {
                 component="div"
                 sx={{ flexGrow: 1, my: 2 }}
             >
-                <img src={Logo} alt="logo" height={"70"} width="200" />
+                <img src={Logo} alt="logo" height={"70"} width="200"/>
             </Typography>
             <Divider />
             <ul className="mobile-navigation">
@@ -41,6 +44,12 @@ const Header = () => {
                 </li>
                 <li>
                     <NavLink to={"/contact"}>Contact</NavLink>
+                </li>
+                <li>
+                   <SearchIcon/>
+                </li>
+                <li>
+                    <NavLink to="/cartpage"><ShoppingCartIcon/></NavLink>            
                 </li>
             </ul>
         </Box>
@@ -85,6 +94,12 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <NavLink to={"/contact"}>Contact</NavLink>
+                                </li>
+                                <li>
+                                    <SearchIcon/>
+                                </li>
+                                <li>
+                                    <NavLink to="/cartpage"><ShoppingCartIcon/></NavLink>            
                                 </li>
                             </ul>
                         </Box>

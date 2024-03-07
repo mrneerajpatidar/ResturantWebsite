@@ -1,0 +1,43 @@
+.Menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    margin: 50px;
+    max-width: 390px;
+}
+
+.add-btn {
+   text-align: center;
+    color: white;
+}
+
+.add-btn button{
+    padding: 15px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: rgb(241, 113, 113);
+    border: none;
+}
+.css-h93ljk-MuiTypography-root{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rupee {
+    display: flex;
+    align-items: center;
+}
+
+.descrition {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1669bb;
+    font-size: 20px;
+    padding: 10px 10px;
+    height: 100px;
+} 
